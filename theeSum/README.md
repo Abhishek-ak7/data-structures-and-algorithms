@@ -2,7 +2,7 @@
 
 A Java solution to the classic **3Sum** problem, paired with an interactive React visualization that explains the two-pointer technique to anyone — technical or not.
 
-**Find every unique triplet of numbers in a list that adds up to zero.**
+**click here 👇**
 
 🔗 **[Try the live visualization](https://7kcxsf.csb.app/)**
 
