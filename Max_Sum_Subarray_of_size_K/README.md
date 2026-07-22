@@ -4,6 +4,11 @@ A Java solution to the **Max Sum Subarray of Size K** problem, paired with an in
 
 **Given a list of numbers and a fixed size K, find the maximum sum among all contiguous groups of K numbers.**
 
+
+**click here 👇**
+
+🔗 **[Try the live visualization](https://t66qzf.csb.app/)**
+
 ![Sliding window animation](./sliding-window-walk.gif)
 
 ---
@@ -24,17 +29,6 @@ Groups of 2 neighbours:
 Answer: 700
 ```
 
----
-
-## 💡 Real-Life Analogy
-
-Imagine a **picture frame of fixed width** sliding along a long wall covered in paintings, each painting tagged with a price.
-
-You want to know: which stretch of `k` neighbouring paintings, framed together, has the **highest combined price**?
-
-Instead of picking the frame up and re-adding every painting's price each time you move it, you do something smarter: slide the frame one painting to the right, **add the price of the painting that just came into view**, and **subtract the price of the painting that just left**. One quick update instead of starting over.
-
----
 
 ## 🧠 Core Idea
 
@@ -48,49 +42,12 @@ This avoids recomputing the sum of every group from scratch — each slide is ju
 
 ---
 
-## 🔄 Algorithm Flow
 
-```mermaid
-flowchart TD
-    A[Start] --> B[Sum the first k numbers]
-    B --> C[Set that as the current window sum<br/>and the max sum so far]
-    C --> D{More numbers<br/>to slide over?}
-    D -->|No| H[Return max sum]
-    D -->|Yes| E[New sum = current sum<br/>+ entering number<br/>- leaving number]
-    E --> F{New sum ><br/>max so far?}
-    F -->|Yes| G[Update max so far]
-    F -->|No| D
-    G --> D
-```
 
 ---
 
 ## 💻 The Java Solution
 
-```java
-package Max_Sum_Subarray_of_size_K;
-
-public class Solution {
-	public static int maxSumSubarray(int[] arr, int k) {
-	    int windowSum=0;
-		for(int i=0;i<k;i++){
-			windowSum+=arr[i];
-		}
-		int prevSum=windowSum;
-		int maxSum=windowSum;
-		for(int i=k;i<arr.length;i++){
-			prevSum=prevSum+arr[i]-arr[i-k];
-			if(prevSum>maxSum) maxSum=prevSum;
-		}
-		return maxSum;
-	}
-
-	public static void main(String[] args) {
-		int[] arr = {100, 200, 300, 400};
-		System.out.println(maxSumSubarray(arr, 2)); 
-	}
-}
-```
 
 **Complexity**
 - Time: `O(n)` — every number is added once (into the window) and subtracted once (as it leaves).
@@ -102,27 +59,8 @@ public class Solution {
 
 `SlidingWindowVisualizer.jsx` renders the algorithm as a window frame gliding across the array: the tiles inside the frame are highlighted gold, the entering value is marked in teal, the leaving value in crimson, and the running max updates live as it's beaten.
 
-**Features**
-- Type in your own array and `k`, or hit the shuffle icon for a random example
-- Step forward / backward, or press play to auto-advance
-- Live "window sum" and "max so far" readouts
-- Visual entering/leaving markers on every slide
 
-**Run it locally**
-```bash
-npm install lucide-react
 ```
-```jsx
-import SlidingWindowVisualizer from "./SlidingWindowVisualizer";
-
-export default function App() {
-  return <SlidingWindowVisualizer />;
-}
-```
-
-A ready-to-run CodeSandbox project (with `package.json`, `index.html`, `index.js`, `App.js` already wired up) is included as `max-sum-subarray-sandbox.zip` — unzip it, `npm install`, `npm start`, and it runs immediately.
-
----
 
 ## ✅ Why This Approach Works
 
