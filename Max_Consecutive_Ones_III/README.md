@@ -7,7 +7,7 @@ A Java solution to the **Max Consecutive Ones III** problem, paired with an inte
 
 **click here 👇**
 
-🔗 **[Try the live visualization](https://7kcxsf.csb.app/)**
+🔗 **[Try the live visualization](https://rxk97w.csb.app/)**
 
 
 ![Streetlight repair window animation](./repair-window-walk.gif)
