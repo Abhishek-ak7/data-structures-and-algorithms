@@ -1,4 +1,4 @@
-// package Binary_Subarrays_With_Sum_930;
+package binary_subarrays_with_sum;
 
 public class Solution {
     public static int numSubarraysWithSum(int[] nums, int goal) {
