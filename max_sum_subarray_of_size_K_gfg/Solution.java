@@ -1,4 +1,4 @@
-package Max_Sum_Subarray_of_size_K;
+package max_sum_subarray_of_size_K_gfg;
 
 public class Solution {
 	public static int maxSumSubarray(int[] arr, int k) {

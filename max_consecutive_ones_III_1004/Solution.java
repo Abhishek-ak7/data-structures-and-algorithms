@@ -1,5 +1,5 @@
 
-package max_consecutive_ones_III;
+package max_consecutive_ones_III_1004;
 import java.util.*;
 public class Solution {
 
