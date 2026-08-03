@@ -4,6 +4,11 @@ A Java solution to the **Fruit Into Baskets** problem (LeetCode 904), paired wit
 
 **Given a row of fruit trees and exactly 2 baskets (one fruit type per basket), find the most fruit you can collect in one continuous walk.**
 
+
+**click here 👇**
+
+🔗 **[Try the live visualization](https://gz2s62.csb.app/)**
+
 ![Fruit basket window animation](./basket-walk.gif)
 
 ---
