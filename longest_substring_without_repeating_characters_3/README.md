@@ -1,4 +1,4 @@
-# Longest Substring Without Repeating Characters — The Guest List
+# 3.Longest Substring Without Repeating Characters — The Guest List
 
 A Java solution to the **Longest Substring Without Repeating Characters** problem, paired with an interactive React visualization that explains the sliding window technique to anyone — technical or not.
 
@@ -6,7 +6,7 @@ A Java solution to the **Longest Substring Without Repeating Characters** proble
 
 **click here 👇**
 
-🔗 **[Try the live visualization]()**
+🔗 **[Try the live visualization](https://xxnxsz.csb.app/)**
 
 ![No-repeat window animation](./no-repeat-walk.gif)
 
