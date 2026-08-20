@@ -4,6 +4,11 @@ A Java solution to the **Length of Longest Subarray with at most K Frequency** p
 
 **Given a list of numbers and a limit `k`, find the longest continuous stretch where no single value appears more than `k` times.**
 
+
+**click here 👇**
+
+🔗 **[Try the live visualization](https://vgvj2r.csb.app/)**
+
 ![Card window animation](./card-window-walk.gif)
 
 ---
