@@ -1,0 +1,56 @@
+# Java / JVM
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+*.log
+
+# Build output
+bin/
+out/
+build/
+target/
+.gradle/
+.gradle-cache/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.classpath
+*.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / frontend sandbox artifacts
+node_modules/
+.npm/
+.pnpm-store/
+.env
+.env.*
+coverage/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Local project-specific artifacts
+tempCodeRunnerFile.java
