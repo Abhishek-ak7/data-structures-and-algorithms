@@ -1,4 +1,4 @@
-# Maximum Subarray (Kadane's Algorithm) — The Winning Streak
+# 53 Maximum Subarray (Kadane's Algorithm) — The Winning Streak
 
 A Java solution to the classic **Maximum Subarray** problem using **Kadane's Algorithm**, paired with an interactive React visualization that explains the technique to anyone — technical or not.
 
