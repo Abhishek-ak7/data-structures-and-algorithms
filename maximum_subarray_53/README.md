@@ -4,6 +4,10 @@ A Java solution to the classic **Maximum Subarray** problem using **Kadane's Alg
 
 **Given a list of numbers (positive and negative), find the contiguous stretch with the largest possible sum.**
 
+**click here 👇**
+
+🔗 **[Try the live visualization](https://5kvrvj.csb.app/)**
+
 ![Kadane's algorithm animation](./kadane-walk.gif)
 
 ---
