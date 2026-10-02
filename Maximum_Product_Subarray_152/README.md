@@ -1,5 +1,9 @@
 # Maximum Product Subarray (LeetCode 152)
 
+**click here 👇**
+
+🔗 **[Try the live visualization](https://fcgcgw.csb.app/)**
+
 ![Walkthrough](./maxproduct-walk.gif)
 
 ## Problem
@@ -49,26 +53,6 @@ flowchart TD
     H --> C
 ```
 
-## Java solution
-
-```java
-public static int maxProduct(int[] nums) {
-    int currentProMax = nums[0];
-    int currentProMin = nums[0];
-    int maxProduct = nums[0];
-
-    for (int i = 1; i < nums.length; i++) {
-        int tempMax = currentProMax;
-        currentProMax = Math.max(nums[i], Math.max(tempMax * nums[i], currentProMin * nums[i]));
-        currentProMin = Math.min(nums[i], Math.min(tempMax * nums[i], currentProMin * nums[i]));
-        maxProduct = Math.max(maxProduct, Math.max(currentProMax, currentProMin));
-    }
-    return maxProduct;
-}
-```
-
-Full file: [`Solution.java`](./Solution.java)
-
 ## Trace on `[2,3,-2,4]`
 
 | i | nums[i] | curMax | curMin | best |
@@ -85,16 +69,4 @@ Result: **6**. The GIF uses `[2,3,-2,4,-1]` so you can watch `-48` flip to `48`.
 - **Time:** O(n), one pass
 - **Space:** O(1), three integers
 
-Note: `int` can overflow on very long arrays with large values. LeetCode guarantees the answer fits in 32 bits.
 
-## Interactive version
-
-`MaxProductVisualizer.jsx` is a React component. Type your own array and step through it, or auto-play.
-
-**Quickest way:** unzip `maxproduct-sandbox.zip`, then
-
-```bash
-npm install && npm start
-```
-
-Or upload the unzipped folder to [codesandbox.io](https://codesandbox.io) (Import project).
